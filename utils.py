@@ -13,7 +13,7 @@ def CorrNoiseGer(rho,m,n):
     C = torch.linalg.cholesky(Rho)
     gaussian_noise = torch.randn(m,n)
     return gaussian_noise@C
-### Re-referenciamento (Bipolar, Referencial e CAR)
+###
 import itertools
 def re_ref(y,channels,method):
     # Time Domain
